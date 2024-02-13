@@ -10,7 +10,21 @@ const root = ReactDOM.createRoot(el);
 
 // 4) Create a component
 function App() {
-  return <h1>Hi there!</h1>;
+  // let message = 123;            //=> Prints 123
+  // let message = 'abc';          //=> Prints abc
+  // let message = true;           //=> Shows nothing
+  // let message = undefined;      //=> Shows nothing
+  // let message = null;           //=> Shows nothing
+  // let message = [1, 2, 3];      //=> Prints nothing
+  // let message = ['abc', 'def']; //=> Prints abcdef
+  // let message = {}              //=> Throws Error, Check error console log
+
+  let message = 'Bye there!';
+  if (Math.random() > 0.5) {
+    message = 'Hello there!';
+  }
+
+  return <h1>{message}</h1>;
 }
 
 // 5) Show the component on the screen
