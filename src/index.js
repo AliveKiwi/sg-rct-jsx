@@ -10,13 +10,19 @@ const root = ReactDOM.createRoot(el);
 
 // 4) Create a component
 function App() {
-  const name = 'Prateek';
-  const age = 29;
+  const minValue = 5;
+  const maxValue = 10;
+  const message = 'Enter Age';
 
   return (
-    <h1>
-      Hi, my name is {name} and my age is {age}
-    </h1>
+    <input
+      type="number"
+      min={minValue}
+      max={maxValue}
+      style={{ border: '3px solid red' }} // Objects - Wrap with curly braces
+      list={[1, 2, 3]} // Arrays - Wrap with curly braces
+      alt={message} // Variables - Wrap with curly braces
+    />
   );
 }
 
